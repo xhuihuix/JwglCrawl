@@ -2,14 +2,7 @@ import os
 
 from JwglCrawlClass import JwglCrawl
 
-# crwal = JwglCrawl()
-# crwal.login()
-# crwal.getTerm(line_limit=4)
-# crwal.getAcadProg()
-
 crawl = JwglCrawl()
-
-
 def printLevel1Menu():
     i = 0
     for index in range(0,len(level1Menu),2):
@@ -25,18 +18,6 @@ def printLevel2Menu():
             print("%d. %s" % (i+1, levelMap[index+1]))
             i = i + 1
 
-
-
-# def execMenu1(level1Pointer, level2Pointer):
-#     for index, item in enumerate(level1Menu):
-#         if index + 1 == level1Pointer:
-#             if level2Pointer == 0:
-#                 print(level1Menu[level1Pointer])
-#             else:
-#                 for item1 in levelMap:
-#                     if item == item1:
-#                         loginLevel2Menu[levelMap[item1]]()
-#
 def execMenu2():
     temp_1 = 0
     for i in range(len(levelMap)):

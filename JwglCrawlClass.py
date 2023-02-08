@@ -10,7 +10,7 @@ from re import search
 from io import BytesIO
 
 
-class JwglCrawl():
+class JwglCrawl:
     guanwangUrl = "https://sis.ustb.edu.cn"
     tokenUrl = "https://jwgl.ustb.edu.cn/glht/Logon.do?method=randToken"
     retUrl = "https://jwgl.ustb.edu.cn/glht/Logon.do?method=weCharLogin"
