@@ -1,5 +1,4 @@
 import os
-
 from JwglCrawlClass import JwglCrawl
 
 crawl = JwglCrawl()
@@ -38,6 +37,8 @@ def setBackFlag():
 def clear():
     os.system('cls')
 
+def quit():
+    exit(0)
 
 level1Pointer = 0
 level2Pointer = 0
@@ -53,7 +54,7 @@ loginLevel2Menu = {"登录教务管理系统": crawl.login,
                    "查看学业完成进度": crawl.getAcadProg,
                    "查看选课中心课程": crawl.notFinish,
                    "返回上一级": setBackFlag,
-                   "退出系统": exit}
+                   "退出系统": quit}
 
 levelMap = ["进入软件", "登录教务管理系统",
             "进入软件", "获取某学期所有课程成绩",
