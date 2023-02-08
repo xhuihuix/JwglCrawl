@@ -1,6 +1,5 @@
 import os
 
-from jwgl_api import *
 from JwglCrawlClass import JwglCrawl
 
 # crwal = JwglCrawl()
