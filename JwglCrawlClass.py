@@ -162,7 +162,7 @@ class JwglCrawl:
             output_format_one = output_format_one + "|{%d:{%d}^%d}|" % (i, len(InfoList), center_space)
             if line_limit != -1 and i % line_limit == 0:
                 output_format_one = output_format_one + '\n'
-            data.append(item_list.replace("\n", "").replace("\t", ""))
+            data.append(item_list.replace("\n", "").replace("\t", "").replace("\r", ""))
         data.append(" ")
         print(output_format_one.format(*data))
 
